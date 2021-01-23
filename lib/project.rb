@@ -13,5 +13,6 @@ class Project
       if p == self
         backer.backed_projects << self
       end
+    end
   end
 end
