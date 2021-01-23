@@ -9,10 +9,6 @@ class Project
 
   def add_backer(backer)
     @backers << backer
-    backer.backed_projects.each do |p|
-      if p == self
-        backer.backed_projects << self
-      end
-    end
+    backer.backed_projects << self
   end
 end
